@@ -1,4 +1,4 @@
-# cocoabox
+# Cocoabox
 Complex Connectivity Analysis toolbox
 
 # Overview
@@ -11,7 +11,7 @@ Future versions will include further modules, as well as additional parameters f
 MATLAB. Recommended version: 2020b.
 
 ## Usage
-Download the entire repo and run *cocoabox.mlapp* to analyse your data in a GUI. For instructions on using the user interface, see the GUI User Manual below.
+Download the entire repo and run `cocoabox.mlapp` to analyse your data in a GUI. For instructions on using the user interface, see the [GUI User Manual](https://github.com/cobragroup/cocoabox#gui-user-manual) below.
 
 Alternatively, select relevant MATLAB functions and use them in your analyses. The functions are divided into two folders - Functions_cocoa and Functions_external - and documented directly in their headers. 
 
