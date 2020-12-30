@@ -1,9 +1,6 @@
 # Cocoabox
-Complex Connectivity Analysis toolbox
 
-# Overview
-
-Cocoabox is a library of software modules for modeling and analysis of complex systems, implemented in MATLAB. It makes the analysis of complex systems simple by combining a set of tools for advanced data analysis usually available in separate libraries (dimension reduction, visualization, estimation of linear and nonlinear dependence, theoretical analysis of graphs, and more). Its modular architecture makes it easily adaptable to the needs of various application areas. 
+Cocoabox (Complex Connectivity Analysis toolbox) is a library of software modules for modeling and analysis of complex systems, implemented in MATLAB. It makes the analysis of complex systems simple by combining a set of tools for advanced data analysis usually available in separate libraries (dimension reduction, visualization, estimation of linear and nonlinear dependence, theoretical analysis of graphs, and more). Its modular architecture makes it easily adaptable to the needs of various application areas. 
 
 Future versions will include further modules, as well as additional parameters for existing modules.
 
