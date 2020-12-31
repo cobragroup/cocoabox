@@ -21,6 +21,8 @@ The input data is currently expected to be:
 
 Create a subfolder named "Data" within the main cocoabox folder, and move the .mat file there. 
 
+--- 
+
 ## Analysis steps (GUI tabs)
 
 ### DATA IMPORT
@@ -37,9 +39,13 @@ To select a subset of the data, enter the indices of **Timepoints**, **Regions**
 
 *Note: Make sure current dimensions of your data (displayed in the text area at the bottom of the GUI window) agree with the expected dimensions before proceeding to the next step.*
 
+---
+
 ### PREPROCESSING (optional)
 
 *Coming soon*
+
+---
 
 ### DIMENSIONALITY REDUCTION (optional)
 
@@ -65,6 +71,8 @@ Optionally: change the default indices of **Timepoints**, **Components**/**Clust
 
 *Note: If you are working with a subset of the original data, the indices to be visualised refer to the subset, not to the original data (i.e. the subset to be visualised is a subset of the subset).*
 
+---
+
 ### CONNECTIVITY MATRICES
 
 Computes the selected functional or effective connectivity measure.
@@ -79,6 +87,8 @@ Computes the selected functional or effective connectivity measure.
 - selected matrices + Matrices - enter the indices of connectivity matrices to be visualised (as comma-separated lists, numeric ranges, or a combination of the two).
 
 *Note: If you are working with a subset of the original data, the indices to be visualised refer to the subset, not to the original data (i.e. the subset to be visualised is a subset of the subset).* 
+
+---
 
 ### STATISTICAL INFERENCE
 
@@ -105,6 +115,8 @@ For comparing group connectivity by a 1-dimensional feature. For the selected fe
 - PCA - coefficient of the first PCA component of every realisations (subject's) connectivity matrix 	
 
 *Note: For some of the features, uploading an **Additional matrix** - a Boolean mask or a "gold standard" matrix (the TFC matrix of the control group) is necessary. The additional matrix should be 2D (regions * regions), and saved in the "Data" subfolder of the main cocoabox folder.*
+
+---
 
 ### GRAPH THEORY ANALYSIS (optional)
 
