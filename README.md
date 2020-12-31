@@ -78,7 +78,7 @@ Create a subfolder named "Data" within the main cocoabox folder, and move the .m
 Enter dataset and group labels (optional, to be used in visualisations), and the subject count for each group. 
 
 #### Subset selection (optional)
-To select a subset of the data, enter the indices of Timepoints, Regions, and/or Realisations (subjects) in the respective text fields (as comma-separated lists, numeric ranges, or a combination of the two), and use the switch button to indicate whether they are to be included or excluded. 
+To select a subset of the data, enter the indices of **Timepoints**, **Regions**, and/or **Realisations** (subjects) in the respective text fields (as comma-separated lists, numeric ranges, or a combination of the two), and use the switch button to indicate whether they are to be included or excluded. 
 
 `Reset` -> return to original data. (To create a new subset of the original data, click on `Reset` first).
 
@@ -92,7 +92,7 @@ To select a subset of the data, enter the indices of Timepoints, Regions, and/or
 
 Reduces dimensionality of the data using the selected decomposition or clustering method. 
 
-**Parameters:**
+Parameters:
 - **Method**: PCA (default), ICA, NNMF (non-negative matrix factorisation), k-means clustering
 - **Number of components** (for decomposition) / **Number of clusters** (for clustering)
 - **Dimension**: temporal, spatial (k-means: only temporal)
@@ -103,12 +103,12 @@ Reduces dimensionality of the data using the selected decomposition or clusterin
 
 #### Visualisation (optional)
 
-**Parameters:**
+Parameters:
 - **Method**: individual (default), summarised
 
 The "individual" method will plot each region separately. The time series of each subject will be displayed on a separate figure, and split into several figures if their count exceeds 15. If more than 30 figures are to be shown, the method will automatically change to "summarised". Method "summarised" will create a single plot for all regions.
 
-Optionally: change the default indices of Timepoints, Components/Clusters, and/or Realisations (subjects) to be visualised in the respective text fields (as comma-separated lists, numeric ranges, or a combination of the two), and use the switch button to indicate whether those are to be included or excluded. 
+Optionally: change the default indices of **Timepoints**, **Components**/**Clusters**, and/or **Realisations** (subjects) to be visualised in the respective text fields (as comma-separated lists, numeric ranges, or a combination of the two), and use the switch button to indicate whether those are to be included or excluded. 
 
 *Note: If you are working with a subset of the original data, the indices to be visualised refer to the subset, not to the original data (i.e. the subset to be visualised is a subset of the subset).*
 
@@ -120,7 +120,7 @@ Computes the selected functional or effective connectivity measure.
 
 #### Visualisation (optional)
 
-**Options:**
+**Options**:
 - first matrix (default) - connectivity matrix of the first realisation (subject)
 - number of matrices + Matrices count - specify the number of matrices to be visualised. Entering "10", for example, will visualise the connectivity matrices of the first and last 5 realisations (subjects).
 - selected matrices + Matrices - enter the indices of connectivity matrices to be visualised (as comma-separated lists, numeric ranges, or a combination of the two).
@@ -135,7 +135,7 @@ Performs statistical analysis to compare group connectivity. The parameters to b
 
 For element-wise comparison of group connectivity. Finds regions with significant differences between groups. The group mean values of every element are compared using the selected group comparison test. 
 
-**Parameters:**
+Parameters:
 - **Group comparison test**: Mann-Whitney U-test (deault; non-parametric), t-test (parametric)
 - **Multiple correction method**: FWE (default; Hochberg procedure), FDR (Benjamini-Hochberg procedure), Bonferroni, none (no multiple correction)
 - **alpha threshold** (default: 0.05)
@@ -151,15 +151,14 @@ For comparing group connectivity by a 1-dimensional feature. For the selected fe
 - average mask connectivity - averaged connectivity per subject, after masking; needs mask matrix 
 - PCA - coefficient of the first PCA component of every realisations (subject's) connectivity matrix 	
 
-*Note: For some of the features, uploading an additional matrix - a Boolean mask or a "gold standard" matrix (the TFC matrix of the control group) is necessary. The additional matrix should be 2D (regions * regions), and saved in the "Data" subfolder of the main cocoabox folder.*
+*Note: For some of the features, uploading an **Additional matrix** - a Boolean mask or a "gold standard" matrix (the TFC matrix of the control group) is necessary. The additional matrix should be 2D (regions * regions), and saved in the "Data" subfolder of the main cocoabox folder.*
 
 ### GRAPH THEORY ANALYSIS (optional)
 
 Computes the following graph theoretical properties of (symmetric) connectivity matrices: clustering coefficient, characteristic path length, small-world coefficient, efficiency, transitivity, and assortativity. Performs a statistical comparison of the difference between the two groups (for each graph theoretical property), using a statistical test.
 
-**Parameters:**
-
-- **threshold density** - the thresholding density (percentage of nonzero elements) to which the input connectivity matrices are first thresholded before the graph theoretical properties are computed (default: 0.25)
+Parameters:
+- **Threshold density** - the thresholding density (percentage of nonzero elements) to which the input connectivity matrices are first thresholded before the graph theoretical properties are computed (default: 0.25)
 - **alpha threshold** - p-value for the statistical test (default: 0.05)
 
 *Note: Graph theory analysis currently only works for symmetrical matrices. If the connectivity matrices are not symmetric, all components of this tab are automatically disabled.*
