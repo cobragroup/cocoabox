@@ -53,6 +53,8 @@ This work was supported by project TN01000024 of the Technological Agency of the
 
 The Cocoabox GUI can be used for different kinds of analyses on different types of data. For the purposes of this manual, let's suppose that you have resting-state fMRI measurements of two groups of subjects, would like to compute their connectivity matrices, and see whether there is a statistically significant difference between the two groups. 
 
+![GUI screenshot](/GUI_screenshot.png)
+
 Each tab on the left side of the GUI window presents a step of the data analysis pipeline. We recommend going through the tabs in the default order (top to bottom), as described below. Some of the steps (e.g. Preprocessing) are optional - you may choose to skip them, depending on your data and objective. Optional steps can be distinguished by a darker grey tab-background colour. Visualisations can be generated at various steps of the analysis.
 
 Pressing a button (e.g. "Label data", "Compute") performs the given operation or analysis using the parameter values specified above the button. The default values for each parameter can be changed by the user.
