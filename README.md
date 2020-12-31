@@ -131,7 +131,7 @@ Computes the selected functional or effective connectivity measure.
 
 Performs statistical analysis to compare group connectivity. The parameters to be specified depend on the statistical analysis method selected at the top.
 
-#### Method: p-value masking
+#### A. METHOD: p-value masking
 
 For element-wise comparison of group connectivity. Finds regions with significant differences between groups. The group mean values of every element are compared using the selected group comparison test. 
 
@@ -140,7 +140,7 @@ For element-wise comparison of group connectivity. Finds regions with significan
 - **Multiple correction method**: FWE (default; Hochberg procedure), FDR (Benjamini-Hochberg procedure), Bonferroni, none (no multiple correction)
 - **alpha threshold** (default: 0.05)
 
-#### Method: ROC 
+#### B. METHOD: ROC 
 
 For comparing group connectivity by a 1-dimensional feature. For the selected feature, the ROC curve is computed for classification based on a set of thresholds. AUC (Area Under Curve) is calculated. The group mean values of the feature are compared using the Mann-Whitney U-test. 
 
