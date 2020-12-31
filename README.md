@@ -155,11 +155,11 @@ For comparing group connectivity by a 1-dimensional feature. For the selected fe
 
 ### Graph theory analysis (optional)
 
-Computes the following graph theoretical properties of symmetric connectivity matrices: clustering coefficient, characteristic path length, small-world coefficient, efficiency, transitivity, and assortativity. Performs a statistical comparison of the difference between the two groups (for each graph theoretical property), using a statistical test.
+Computes the following graph theoretical properties of (symmetric) connectivity matrices: clustering coefficient, characteristic path length, small-world coefficient, efficiency, transitivity, and assortativity. Performs a statistical comparison of the difference between the two groups (for each graph theoretical property), using a statistical test.
 
 **Parameters:**
 
 - **threshold density** - the thresholding density (percentage of nonzero elements) to which the input connectivity matrices are first thresholded before the graph theoretical properties are computed (default: 0.25)
 - **alpha threshold** - p-value for the statistical test (default: 0.05)
 
-*Note: If the connectivity matrices are not symmetric, all components of this tab are automatically disabled.*
+*Note: Graph theory analysis currently only works for symmetrical matrices. If the connectivity matrices are not symmetric, all components of this tab are automatically disabled.*
