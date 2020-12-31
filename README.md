@@ -136,7 +136,7 @@ Performs statistical analysis to compare group connectivity. The parameters to b
 For element-wise comparison of group connectivity. Finds regions with significant differences between groups. The group mean values of every element are compared using the selected group comparison test. 
 
 Parameters:
-- **Group comparison test**: Mann-Whitney U-test (deault; non-parametric), t-test (parametric)
+- **Group comparison test**: Mann-Whitney U-test (default; non-parametric), t-test (parametric)
 - **Multiple correction method**: FWE (default; Hochberg procedure), FDR (Benjamini-Hochberg procedure), Bonferroni, none (no multiple correction)
 - **alpha threshold** (default: 0.05)
 
