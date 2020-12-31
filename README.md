@@ -70,7 +70,7 @@ Create a subfolder named "Data" within the main cocoabox folder, and move the .m
 
 ## Analysis steps (GUI tabs)
 
-### Data import
+### DATA IMPORT
 
 `Import data` -> load .mat file with the data to be analysed
 
@@ -84,11 +84,11 @@ To select a subset of the data, enter the indices of Timepoints, Regions, and/or
 
 *Note: Make sure current dimensions of your data (displayed in the text area at the bottom of the GUI window) agree with the expected dimensions before proceeding to the next step.*
 
-### Preprocessing (optional)
+### PREPROCESSING (optional)
 
 *Coming soon*
 
-### Dimensionality reduction (optional)
+### DIMENSIONALITY REDUCTION (optional)
 
 Reduces dimensionality of the data using the selected decomposition or clustering method. 
 
@@ -112,7 +112,7 @@ Optionally: change the default indices of Timepoints, Components/Clusters, and/o
 
 *Note: If you are working with a subset of the original data, the indices to be visualised refer to the subset, not to the original data (i.e. the subset to be visualised is a subset of the subset).*
 
-### Connectivity matrices
+### CONNECTIVITY MATRICES
 
 Computes the selected functional or effective connectivity measure.
 
@@ -127,7 +127,7 @@ Computes the selected functional or effective connectivity measure.
 
 *Note: If you are working with a subset of the original data, the indices to be visualised refer to the subset, not to the original data (i.e. the subset to be visualised is a subset of the subset).* 
 
-### Statistical inference
+### STATISTICAL INFERENCE
 
 Performs statistical analysis to compare group connectivity. The parameters to be specified depend on the statistical analysis method selected at the top.
 
@@ -153,7 +153,7 @@ For comparing group connectivity by a 1-dimensional feature. For the selected fe
 
 *Note: For some of the features, uploading an additional matrix - a Boolean mask or a "gold standard" matrix (the TFC matrix of the control group) is necessary. The additional matrix should be 2D (regions * regions), and saved in the "Data" subfolder of the main cocoabox folder.*
 
-### Graph theory analysis (optional)
+### GRAPH THEORY ANALYSIS (optional)
 
 Computes the following graph theoretical properties of (symmetric) connectivity matrices: clustering coefficient, characteristic path length, small-world coefficient, efficiency, transitivity, and assortativity. Performs a statistical comparison of the difference between the two groups (for each graph theoretical property), using a statistical test.
 
