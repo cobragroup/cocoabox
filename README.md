@@ -163,4 +163,4 @@ Parameters:
 - **Threshold density** - the thresholding density (percentage of nonzero elements) to which the input connectivity matrices are first thresholded before the graph theoretical properties are computed (default: 0.25)
 - **alpha threshold** - p-value for the statistical test (default: 0.05)
 
-*Note: Graph theory analysis currently only works for symmetrical matrices. If the connectivity matrices are not symmetric, all components of this tab are automatically disabled.*
+*Note: Graph theory analysis currently only works for symmetric matrices. If the connectivity matrices are not symmetric, all components of this tab are automatically disabled.*
