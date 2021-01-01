@@ -30,7 +30,7 @@ Create a subfolder named "Data" within the main cocoabox folder, and move the .m
 `Import data` -> load .mat file with the data to be analysed
 
 #### Data labeling
-Enter dataset and group labels (optional, to be used in visualisations), and the subject count for each group. 
+Enter dataset and group **Labels** (optional, to be used in visualisations), and the subject **Count** for each group. 
 
 #### Subset selection (optional)
 To select a subset of the data, enter the indices of **Timepoints**, **Regions**, and/or **Realisations** (subjects) in the respective text fields (as comma-separated lists, numeric ranges, or a combination of the two), and use the switch button to indicate whether they are to be included or excluded. 
@@ -77,14 +77,17 @@ Optionally: change the default indices of **Timepoints**, **Components**/**Clust
 
 Computes the selected functional or effective connectivity measure.
 
+Parameters:
+- **Connectivity measure**: Pearson correlation (default), partial Pearson correlation, Spearman correlation, mutual information, Granger causality
+
 *Note: Clicking on "Compute" repeatedly will overwrite previous results, allowing you to try various connectivity measures.*
 
 #### Visualisation (optional)
 
 **Options**:
 - first matrix (default) - connectivity matrix of the first realisation (subject)
-- number of matrices + Matrices count - specify the number of matrices to be visualised. Entering "10", for example, will visualise the connectivity matrices of the first and last 5 realisations (subjects).
-- selected matrices + Matrices - enter the indices of connectivity matrices to be visualised (as comma-separated lists, numeric ranges, or a combination of the two).
+- number of matrices + **Matrices count** - specify the number of matrices to be visualised. Entering "10", for example, will visualise the connectivity matrices of the first and last 5 realisations (subjects).
+- selected matrices + **Matrices** - enter the indices of connectivity matrices to be visualised (as comma-separated lists, numeric ranges, or a combination of the two).
 
 *Note: If you are working with a subset of the original data, the indices to be visualised refer to the subset, not to the original data (i.e. the subset to be visualised is a subset of the subset).* 
 
