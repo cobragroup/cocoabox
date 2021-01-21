@@ -1,6 +1,6 @@
 # GUI User Manual
 
-The Cocoabox GUI can be used for different kinds of analyses on different types of data. For the purposes of this manual, let's suppose that you have resting-state fMRI measurements of two groups of subjects, would like to compute their connectivity matrices, and see whether there is a statistically significant difference between the two groups. 
+The Cocoabox GUI was designed with a range of application areas in mind. It allows you to analyse time series relating to the economy, the climate, the human brain, or any other complex system. For the purposes of this manual, let's suppose that you have resting-state [functional magnetic resonance imaging (fMRI)](https://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging) measurements of two groups of subjects, would like to compute their connectivity matrices, and see whether there is a statistically significant difference between the two groups. 
 
 <p align="center">
     <img src="/GUI_screenshot.png" alt="GUI screenshot" width="65%" height="65%">
@@ -28,6 +28,8 @@ Create a subfolder named "Data" within the main cocoabox folder, and move the .m
 ### DATA IMPORT
 
 `Import data` -> load .mat file with the data to be analysed
+
+Alternatively - in case you would like to run an analysis but do not have a dataset to analyse - use the simulation tool to generate one within the GUI. 
 
 #### Data labeling
 Enter dataset and group **Labels** (optional, to be used in visualisations), and the subject **Count** for each group. 
@@ -103,7 +105,7 @@ For element-wise comparison of group connectivity. Finds regions with significan
 
 Parameters:
 - **Group comparison test**: Mann-Whitney U-test (default; non-parametric), t-test (parametric)
-- **Multiple correction method**: FWE (default; Hochberg procedure), FDR (Benjamini-Hochberg procedure), Bonferroni, none (no multiple correction)
+- **Multiple correction method**: FWE - Hochberg's procedure (default), FWE - Bonferroni correction, FDR (Benjamini-Hochberg procedure), none (no multiple correction)
 - **alpha threshold** (default: 0.05)
 
 #### B. METHOD: ROC 
@@ -111,8 +113,8 @@ Parameters:
 For comparing group connectivity by a 1-dimensional feature. For the selected feature, the ROC curve is computed for classification based on a set of thresholds. AUC (Area Under Curve) is calculated. The group mean values of the feature are compared using the Mann-Whitney U-test. 
 
 **Features:**
-- global connectivity (default) - averaged connectivity per subject
-- typicality of functional connectivity - computed as the Pearson correlation between every realisation's (subject's) connectivity matrix and the gold standard matrix; needs gold standard matrix
+- global connectivity (default) - averaged connectivity per realisation (subject)
+- typicality of functional connectivity (TFC) - computed as the Pearson correlation between every realisation's (subject's) connectivity matrix and the gold standard matrix; needs gold standard matrix
 - mask connectivity - selects elements based on a mask; needs mask matrix
 - average mask connectivity - averaged connectivity per subject, after masking; needs mask matrix 
 - PCA - coefficient of the first PCA component of every realisations (subject's) connectivity matrix 	
