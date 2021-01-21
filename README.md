@@ -44,5 +44,5 @@ version = {0.1},
 <a href="https://www.tacr.cz/en/">
     <img src="/tacr_logo_bw.png" alt="logo TACR" height="80px">
 </a>
-<br>
-This software was developed within the project TN01000024 National Competence Center – Cybernetics and Artificial Intelligence co-financed with the state support of the Technology Agency of the Czech republic within the programme National Centres of Competence 1: Support programme for applied research, experimental development and innovation.
+
+<br>This software was developed within the project TN01000024 National Competence Center – Cybernetics and Artificial Intelligence co-financed with the state support of the Technology Agency of the Czech republic within the programme National Centres of Competence 1: Support programme for applied research, experimental development and innovation.
