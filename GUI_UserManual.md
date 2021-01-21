@@ -105,7 +105,7 @@ For element-wise comparison of group connectivity. Finds regions with significan
 
 Parameters:
 - **Group comparison test**: Mann-Whitney U-test (default; non-parametric), t-test (parametric)
-- **Multiple correction method**: FWE (default; Hochberg procedure), FDR (Benjamini-Hochberg procedure), Bonferroni, none (no multiple correction)
+- **Multiple correction method**: FWE - Hochberg's procedure (default), FWE - Bonferroni correction, FDR (Benjamini-Hochberg procedure), none (no multiple correction)
 - **alpha threshold** (default: 0.05)
 
 #### B. METHOD: ROC 
