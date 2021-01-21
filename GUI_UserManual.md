@@ -1,6 +1,6 @@
 # GUI User Manual
 
-The Cocoabox GUI was designed with a range of application areas in mind. It allows you to analyse time series relating to the economy, the climate, the human brain, or any other complex system. For the purposes of this manual, let's suppose that you have resting-state fMRI measurements of two groups of subjects, would like to compute their connectivity matrices, and see whether there is a statistically significant difference between the two groups. 
+The Cocoabox GUI was designed with a range of application areas in mind. It allows you to analyse time series relating to the economy, the climate, the human brain, or any other complex system. For the purposes of this manual, let's suppose that you have resting-state [functional magnetic resonance imaging (fMRI)](https://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging) measurements of two groups of subjects, would like to compute their connectivity matrices, and see whether there is a statistically significant difference between the two groups. 
 
 <p align="center">
     <img src="/GUI_screenshot.png" alt="GUI screenshot" width="65%" height="65%">
@@ -111,8 +111,8 @@ Parameters:
 For comparing group connectivity by a 1-dimensional feature. For the selected feature, the ROC curve is computed for classification based on a set of thresholds. AUC (Area Under Curve) is calculated. The group mean values of the feature are compared using the Mann-Whitney U-test. 
 
 **Features:**
-- global connectivity (default) - averaged connectivity per subject
-- typicality of functional connectivity - computed as the Pearson correlation between every realisation's (subject's) connectivity matrix and the gold standard matrix; needs gold standard matrix
+- global connectivity (default) - averaged connectivity per realisation (subject)
+- typicality of functional connectivity (TFC) - computed as the Pearson correlation between every realisation's (subject's) connectivity matrix and the gold standard matrix; needs gold standard matrix
 - mask connectivity - selects elements based on a mask; needs mask matrix
 - average mask connectivity - averaged connectivity per subject, after masking; needs mask matrix 
 - PCA - coefficient of the first PCA component of every realisations (subject's) connectivity matrix 	
