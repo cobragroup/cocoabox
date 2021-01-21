@@ -29,6 +29,8 @@ Create a subfolder named "Data" within the main cocoabox folder, and move the .m
 
 `Import data` -> load .mat file with the data to be analysed
 
+Alternatively - in case you would like to run an analysis but do not have a dataset to analyse - use the simulation tool to generate one within the GUI. 
+
 #### Data labeling
 Enter dataset and group **Labels** (optional, to be used in visualisations), and the subject **Count** for each group. 
 
