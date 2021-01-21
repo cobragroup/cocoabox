@@ -1,6 +1,6 @@
 # GUI User Manual
 
-The Cocoabox GUI can be used for different kinds of analyses on different types of data. For the purposes of this manual, let's suppose that you have resting-state fMRI measurements of two groups of subjects, would like to compute their connectivity matrices, and see whether there is a statistically significant difference between the two groups. 
+The Cocoabox GUI was designed with a range of application areas in mind. It allows you to analyse time series relating to the economy, the climate, the human brain, or any other complex system. For the purposes of this manual, let's suppose that you have resting-state fMRI measurements of two groups of subjects, would like to compute their connectivity matrices, and see whether there is a statistically significant difference between the two groups. 
 
 <p align="center">
     <img src="/GUI_screenshot.png" alt="GUI screenshot" width="65%" height="65%">
