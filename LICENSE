@@ -1,23 +1,4 @@
-/********
- * This file is part of Cocoabox.
- *     
- * Cocoabox is a free software: you can redistribute it and/or modify
- * it under the terms of the GNU AFFERO GENERAL PUBLIC LICENSE as 
- * published by the Free Software Foundation, either version 3 of the 
- * License, or (at your option) any later version.
- * 
- * Cocoabox is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU AFFERO GENERAL PUBLIC LICENSE for more details.
- *
- * @copyright : Copyright (c) 2020, Institute of Computer Science of the Czech Academy of Sciences
- * @license   : GNU AFFERO GENERAL PUBLIC LICENSE (AGPL) 3.0. 
- *              See AGPL License at http://www.gnu.org/licenses/agpl-3.0.txt
- ********/
-
-
-                    GNU AFFERO GENERAL PUBLIC LICENSE
+                   GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>

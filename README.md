@@ -19,10 +19,10 @@ Institute of Computer Science, Czech Academy of Sciences
 
 COBRA group - http://cobra.cs.cas.cz 
 
-## Contact
-Jaroslav Hlinka - hlinka@cs.cas.cz
+## License
+Copyright (c) 2020, Institute of Computer Science of the Czech Academy of  Sciences
 
-This software is made available under the AGPL 3.0 licence. For other licensing options including more permissive licenses, please contact the ICS CAS using the contact email address above.
+This software is made available under the AGPL 3.0 license. For license details see the LICENSE file. For other licensing options including more permissive licenses, please contact the first author (hlinka@cs.cas.cz) or email licensing@cs.cas.cz.
 
 ## How to cite
 If using this software for academic work, please cite it in your publications as:
