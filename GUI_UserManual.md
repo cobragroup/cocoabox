@@ -10,6 +10,8 @@ Each tab on the left side of the GUI window presents a step of the data analysis
 
 Pressing a button (e.g. "Label data", "Compute") performs the given operation or analysis using the parameter values specified above the button. The default values for each parameter can be changed by the user.
 
+Create a subfolder named "Data" within the main cocoabox folder, and move any .mat files to be imported there.
+
 --- 
 
 ## Analysis steps (GUI tabs)
@@ -19,7 +21,6 @@ Pressing a button (e.g. "Label data", "Compute") performs the given operation or
 Options:
 - **Data source**: import own data, import matrix/matrices and generate data, generate data from scratch
 
-Create a subfolder named "Data" within the main cocoabox folder, and move any .mat files to be imported there.<br> 
 The parameters to be specified depend on the data source selected at the top.
 
 #### A. DATA SOURCE: import own data
