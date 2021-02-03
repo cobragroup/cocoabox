@@ -10,7 +10,23 @@ Each tab on the left side of the GUI window presents a step of the data analysis
 
 Pressing a button (e.g. "Label data", "Compute") performs the given operation or analysis using the parameter values specified above the button. The default values for each parameter can be changed by the user.
 
-## Data preparation
+--- 
+
+## Analysis steps (GUI tabs)
+
+### DATA IMPORT
+
+Options:
+- **Data source**: import own data, import matrix/matrices and generate data, generate data from scratch
+
+Create a subfolder named "Data" within the main cocoabox folder, and move any .mat files to be imported there.<br> 
+The parameters to be specified depend on the data source selected at the top.
+
+#### A. DATA SOURCE: import own data
+
+Select this option to import and analyse your own time series.
+
+`Import data` -> load .mat file with the data to be analysed
 
 The input data is currently expected to be:
 - preprocessed
@@ -19,17 +35,38 @@ The input data is currently expected to be:
 - stored in a 3D matrix (timepoints * ROIs * subjects)
 - of equal length for both groups (same number of timepoints)
 
-Create a subfolder named "Data" within the main cocoabox folder, and move the .mat file there. 
+#### B. DATA SOURCE: import matrix/matrices and generate data
 
---- 
+Select this option to import a matrix or a set of matrices from which the time series to be analysed will be generated.
 
-## Analysis steps (GUI tabs)
+`Import matrix/matrices` -> load .mat file containing a matrix or a set of matrices from which the data will be generated
 
-### DATA IMPORT
+The input is expected to be:\
+a) of size n * n - to generate the time series for each realisation from the same matrix; with number of realisations specified below\
+b) of size n * n * R - to generate the time series for each realisation from a different matrix; with R = number of realisations\
+Each matrix should be a square real matrix with largest (in absolute value) eigenvalue < 1 (for stationarity of the process).
 
-`Import data` -> load .mat file with the data to be analysed
+Parameters:
+- **Number of matrices** - the number of matrices that have been imported (filled in automatically)
+- **Number of timepoints** - the length of the time series to be generated
+- **Number of regions** - the number of regions to be generated (filled in automatically; given by n - the size of the matrix)
+- **Number of realisations** - the number of realisations (subjects) to be generated (filled in automatically if Number of matrices > 1; given by R - the number of matrices in the set)
 
-Alternatively - in case you would like to run an analysis but do not have a dataset to analyse - use the simulation tool to generate one within the GUI. 
+#### C. DATA SOURCE: generate data from scratch
+
+Select this option to *generate* one or more matrices from which the time series to be analysed will be generated in turn.
+
+Parameters:
+- **Number of matrices** - the number of matrices to be used for data generation
+- **Number of timepoints** - the length of the time series to be generated
+- **Number of regions** - the number of regions to be generated
+- **Number of realisations** (subjects) - the number of realisations (subjects) to be generated (filled in automatically if Number of matrices > 1; given by the number of matrices)<br><br>
+- **Density of matrix** - percentage of nonzero elements  
+- **Largest eigenvalue** - normalisation parameter specifying the biggest eigenvalue of the matrix (max(abs(eig(matrix)))
+- **symmetric** - checked: make all matrices symmetric; unchecked: make all matrices nonsymmetric
+- **autocorrelated** - checked: make all matrices autocorrelated; unchecked: make all matrices not autocorrelated
+
+*Note: If Number of matrices = 1, the time series for each realisation will be generated from the same matrix. If Number of matrices > 1, the time series for each realisation will be generated from a different matrix. The number of realisations is then given by the number of matrices.*
 
 #### Data labeling
 Enter dataset and group **Labels** (optional, to be used in visualisations), and the subject **Count** for each group. 
