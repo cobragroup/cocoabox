@@ -62,7 +62,7 @@ Parameters:
 - **Number of timepoints** - the length of the time series to be generated
 - **Number of regions** - the number of regions to be generated
 - **Number of realisations** (subjects) - the number of realisations (subjects) to be generated (filled in automatically if Number of matrices > 1; given by the number of matrices)<br><br>
-- **Density of matrix** - percentage of nonzero elements  
+- **Graph density** - percentage of nonzero elements
 - **Largest eigenvalue** - normalisation parameter specifying the biggest eigenvalue of the matrix (max(abs(eig(matrix)))
 - **symmetric** - checked: make all matrices symmetric; unchecked: make all matrices nonsymmetric
 - **autocorrelated** - checked: make all matrices autocorrelated; unchecked: make all matrices not autocorrelated
@@ -78,6 +78,8 @@ To select a subset of the data, enter the indices of **Timepoints**, **Regions**
 `Reset` -> return to original data. (To create a new subset of the original data, click on `Reset` first).
 
 *Note: Make sure current dimensions of your data (displayed in the text area at the bottom of the GUI window) agree with the expected dimensions before proceeding to the next step.*
+
+*Warning: If you intend to compute connectivity matrices and perform statistical inference, and/or graph theory analysis, make sure the subsets are not too small, and contain at least one realisation (subject) per group.*
 
 ---
 
@@ -110,6 +112,8 @@ The "individual" method will plot each region separately. The time series of eac
 Optionally: change the default indices of **Timepoints**, **Components**/**Clusters**, and/or **Realisations** (subjects) to be visualised in the respective text fields (as comma-separated lists, numeric ranges, or a combination of the two), and use the switch button to indicate whether those are to be included or excluded. 
 
 *Note: If you are working with a subset of the original data, the indices to be visualised refer to the subset, not to the original data (i.e. the subset to be visualised is a subset of the subset).*
+
+*Warning: If you intend to compute connectivity matrices and perform statistical inference, and/or graph theory analysis, make sure that Number of clusters > 1.*
 
 ---
 
@@ -169,4 +173,4 @@ Parameters:
 - **Threshold density** - the thresholding density (percentage of nonzero elements) to which the input connectivity matrices are first thresholded before the graph theoretical properties are computed (default: 0.25)
 - **alpha threshold** - p-value for the statistical test (default: 0.05)
 
-*Note: Graph theory analysis currently only works for symmetric matrices. If the connectivity matrices are not symmetric, all components of this tab are automatically disabled.*
+*Note: Graph theory analysis currently only works for symmetric matrices of size > 1. If the connectivity matrices are too small, or not symmetric, all components of this tab are automatically disabled.*
