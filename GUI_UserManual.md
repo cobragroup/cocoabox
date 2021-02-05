@@ -62,7 +62,7 @@ Parameters:
 - **Number of timepoints** - the length of the time series to be generated
 - **Number of regions** - the number of regions to be generated
 - **Number of realisations** (subjects) - the number of realisations (subjects) to be generated (filled in automatically if Number of matrices > 1; given by the number of matrices)<br><br>
-- **Graph density** - percentage of nonzero elements
+- **Matrix density** - percentage of nonzero elements
 - **Largest eigenvalue** - normalisation parameter specifying the biggest eigenvalue of the matrix (max(abs(eig(matrix)))
 - **symmetric** - checked: make all matrices symmetric; unchecked: make all matrices nonsymmetric
 - **autocorrelated** - checked: make all matrices autocorrelated; unchecked: make all matrices not autocorrelated
