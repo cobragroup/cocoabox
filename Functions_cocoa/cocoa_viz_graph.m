@@ -2,7 +2,6 @@
 function [fig]=cocoa_viz_graph(results,info)
 %cocoa_viz_graph - Visualization of graph theretical properties comparison
 %of two groups of subjetcs. Speciific visualization function for cocoa.
-
 %
 % Syntax:  [fig]=cocoa_viz_graph(results,info)
 %
@@ -10,13 +9,38 @@ function [fig]=cocoa_viz_graph(results,info)
 % Inputs:
 %    result - result structure (cocoa pipeline)
 %    info - info structure (cocoa pipeline)
-
 %
 % Outputs: fig - figure/scheme of GT properties comparison
 %    
 %
 % 
 % Other m-files required: bplot.m
+
+
+% This file is part of Cocoabox. Cocoabox (Complex Connectivity Analysis 
+% toolbox) is a library of software modules for modeling and analysis of 
+% complex systems.
+%
+% Cocoabox is a free software: you can redistribute it and/or modify it 
+% under the terms of the GNU Affero General Public License as published 
+% by the Free Software Foundation, either version 3 of the License, 
+% or (at your option) any later version.
+% 
+% Cocoabox is distributed in the hope that it will be useful, but WITHOUT 
+% ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or 
+% FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public 
+% License for more details.
+% 
+% URL:          https://github.com/cobragroup/cocoabox
+% Authors:      The full list of authors is available in the README file.
+% Copyright:    Copyright (c) 2020, Institute of Computer Science of 
+%               the Czech Academy of  Sciences
+% License:      GNU AFFERO GENERAL PUBLIC LICENSE (AGPL) 3.0.
+%               For license details see the LICENSE file. 
+%               For other licensing options including more permissive 
+%               licenses, please contact the first author (hlinka@cs.cas.cz) 
+%               or e-mail licensing@cs.cas.cz.
+
 
 fig=figure('Name', 'Graph-theoretical analysis','Position', [10 10 900 900]);
 subplot(3,2,1)
