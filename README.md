@@ -8,7 +8,12 @@ Future versions will include further modules, as well as additional parameter op
 MATLAB. Recommended version: 2020b.
 
 ## Usage
-Download the entire repo and run `cocoabox.mlapp` to analyse your data within a user interface. For instructions on using the GUI, see the [GUI User Manual](GUI_UserManual.md).
+To analyse your data within a user interface:
+- download `cocoaboxGUI.mlappinstall`
+- double-click on the downloaded file to install it
+- click on 'cocoabox' in the Apps tab of the MATLAB Toolstrip to open the GUI
+
+For instructions on using the GUI, see the [GUI User Manual](GUI_UserManual.md).
 
 Alternatively, select relevant MATLAB functions and use them in your analyses. The functions are divided into two folders - "Functions_cocoa" and "Functions_external" - and documented directly in their headers. 
 
