@@ -41,7 +41,7 @@ author = {Hlinka, Jaroslav and Jajcay, Lucia and Bučková, Barbora and Jiříč
 title = {{Cocoabox}}, 
 year = {2020}, 
 url = {https://github.com/cobragroup/cocoabox},
-version = {0.1}, 
+version = {0.2}, 
  }
 ```
 
