@@ -2,6 +2,8 @@
 
 The Cocoabox GUI was designed with a range of application areas in mind. It allows you to analyse time series relating to the economy, the climate, the human brain, or any other complex system. For the purposes of this manual, let's suppose that you have resting-state [functional magnetic resonance imaging (fMRI)](https://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging) measurements of two groups of subjects, would like to compute their connectivity matrices, and see whether there is a statistically significant difference between the two groups. 
 
+The following dataset, made publicly available by our group, can be imported into the GUI without further modifications, thus making it simple to quickly test the GUI on real data: https://osf.io/7ekmw/. The dataset contains preprocessed resting-state fMRI data of 64 patients with multiple sclerosis and 65 healthy controls, sorted by the group (patients first), stored in a 3D matrix (timepoints * ROIs * subjects), of equal length for both groups (same number of timepoints).
+
 <p align="center">
     <img src="/GUI_screenshot.png" alt="GUI screenshot" width="65%" height="65%">
 </p>
